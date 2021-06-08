@@ -10,7 +10,6 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
       setMovies(request.data.results);
       return request;
     }
-
     fetchData();
   }, [fetchUrl]);
 

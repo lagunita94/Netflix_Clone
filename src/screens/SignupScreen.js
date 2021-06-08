@@ -9,7 +9,7 @@ function SignupScreen() {
     auth.signInWithEmailAndPassword(
       emailRef.current.value,
       passwordRef.current.value
-    ).then((user) => console.log(user)).catch((err) => alert(err.message));
+    ).catch((err) => alert(err.message));
   };
   const register = (e) => {
     e.preventDefault();
@@ -18,7 +18,6 @@ function SignupScreen() {
         emailRef.current.value,
         passwordRef.current.value
       )
-      .then((user) => console.log(user))
       .catch((err) => alert(err.message));
   };
   return (
